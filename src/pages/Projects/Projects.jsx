@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import studyNotion from "../../assets/images/StudyNotion.png";
 import vocallyLocal from "../../assets/images/vocally.png";
-import chatApp from "../../assets/images/chatApp.png";
+import chatApp from "../../assets/images/chatapp.png";
 import YtProject from "../../assets/images/YtProject.png";
 import shopifyClone from "../../assets/images/shopifyClone.png";
 
