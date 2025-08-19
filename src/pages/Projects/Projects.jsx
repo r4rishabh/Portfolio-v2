@@ -2,7 +2,7 @@ import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-import studyNotion from "../../assets/images/studyNotion.png";
+import studyNotion from "../../assets/images/StudyNotion.png";
 import vocallyLocal from "../../assets/images/vocally.png";
 import chatApp from "../../assets/images/chatApp.png";
 import YtProject from "../../assets/images/YtProject.png";
