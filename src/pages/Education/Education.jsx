@@ -11,25 +11,15 @@ const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const educationData = [
-    {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Stella Maris Convent School",
-      mascot: "📘",
-      year: "2012-2014",
-      achievements: ["CGPA: 8.0", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology", "English", "Social Science", "Physical Education"],
-      description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
-    },
-    {
-      degree: "Higher Secondary Certificate (HSC)",
-       school: "Stella Maris Convent School",
+     {
+      degree: "MCA (Master of Computer Applications)",
+       school: "Bharati Vidyapeeth University, Pune",
       mascot: "📗",
-      year: "2014-2016",
-      achievements: ["Percentage: 72%", "Stream: PCM"],
-      skills: ["Mathematics", "Physics", "Chemistry", "English", "Physical Education"],
+      year: "2019-2022",
+      achievements: ["CGPA: 9.0", "Stream: Computer Science"],
+      skills: ["C++", "DSA", "DBMS", "Operating System", "Computer Networks", "Web Development"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Enhanced critical thinking and technical expertise by engaging in advanced coursework and projects in programming, databases, and software engineering as part of MCA.",
     },
     {
       degree: "BCA (Bachelor of Computer Applications)",
@@ -41,16 +31,29 @@ const EducationSection = () => {
       description:
         "Cultivated strong analytical and problem-solving skills through in-depth study of computer applications, programming, and software development in BCA",
     },
-    {
-      degree: "MCA (Master of Computer Applications)",
-       school: "Bharati Vidyapeeth University, Pune",
+     {
+      degree: "Higher Secondary Certificate (HSC)",
+       school: "Stella Maris Convent School",
       mascot: "📗",
-      year: "2019-2022",
-      achievements: ["CGPA: 9.0", "Stream: Computer Science"],
-      skills: ["C++", "DSA", "DBMS", "Operating System", "Computer Networks", "Web Development"],
+      year: "2014-2016",
+      achievements: ["Percentage: 72%", "Stream: PCM"],
+      skills: ["Mathematics", "Physics", "Chemistry", "English", "Physical Education"],
       description:
-        "Enhanced critical thinking and technical expertise by engaging in advanced coursework and projects in programming, databases, and software engineering as part of MCA.",
+        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
     },
+    
+    {
+      degree: "Secondary School Certificate (SSC)",
+      school: "Stella Maris Convent School",
+      mascot: "📘",
+      year: "2012-2014",
+      achievements: ["CGPA: 8.0", "Subject: Science"],
+      skills: ["Mathematics", "Physics", "Chemistry", "Biology", "English", "Social Science", "Physical Education"],
+      description:
+        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+    },
+   
+   
   ];
 
   const containerVariants = {
