@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Send, MapPin, Mail } from "lucide-react";
 
 export default function Contact() {
@@ -69,7 +69,6 @@ export default function Contact() {
       const result = await response.json();
 
       if (response.ok) {
-        
         setStatus("Message sent successfully!");
         setTimeout(() => {
           setStatus(null);
@@ -91,10 +90,7 @@ export default function Contact() {
   };
 
   return (
-    <main
-      className="pt-20 lg:pt-[0rem] bg-[#04081A]
- text-white min-h-screen"
-    >
+    <main className="pt-20 lg:pt-[0rem] bg-[#04081A] text-white min-h-screen">
       <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -105,7 +101,7 @@ export default function Contact() {
                   Get in Touch
                 </h2>
                 <p className="text-gray-300 text-lg">
-                  Have a question or want to work together? Drop us a message!
+                  Have a question or want to work together? Drop me a message!
                 </p>
               </div>
 

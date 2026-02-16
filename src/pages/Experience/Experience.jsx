@@ -1,8 +1,14 @@
 /* eslint-disable react/prop-types */
 import "react";
-import { Code2} from "lucide-react";
+import { Code2 } from "lucide-react";
 
-const ExperienceCard = ({ title, company, period, description, icon: Icon }) => (
+const ExperienceCard = ({
+  title,
+  company,
+  period,
+  description,
+  icon: Icon,
+}) => (
   <div className="group relative overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
     {/* Glass morphism effect */}
     <div className="absolute inset-0 backdrop-blur-lg bg-white/5 rounded-lg" />
@@ -30,21 +36,22 @@ const ExperienceCard = ({ title, company, period, description, icon: Icon }) => 
         </div>
 
         {/* Description as bullet points */}
-      <div className="mt-4 border-l-4 border-blue-500/50 pl-4 space-y-4">
-  {description.map((section, idx) => (
-    <div key={idx}>
-      {section.title && (
-        <h4 className="font-bold text-blue-400 text-lg mb-2">{section.title}</h4>
-      )}
-      <ul className="list-disc list-inside space-y-1 text-gray-300 leading-relaxed">
-        {section.points.map((point, i) => (
-          <li key={i}>{point}</li>
-        ))}
-      </ul>
-    </div>
-  ))}
-</div>
-
+        <div className="mt-4 border-l-4 border-blue-500/50 pl-4 space-y-4">
+          {description.map((section, idx) => (
+            <div key={idx}>
+              {section.title && (
+                <h4 className="font-bold text-blue-400 text-lg mb-2">
+                  {section.title}
+                </h4>
+              )}
+              <ul className="list-disc list-outside pl-5 space-y-2 text-gray-300 leading-relaxed">
+                {section.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Decorative elements */}
@@ -64,34 +71,54 @@ const ExperienceSection = () => {
   const experiences = [
     {
       icon: Code2,
-      title: "FrontEnd Developer",
+      title: "Frontend Developer",
       company: "Tata Consultancy Services",
       period: "Oct-2022 - Dec-2024",
       description: [
-  {
-    title: "Project 1",
-    points: [
-      "Designed responsive UI components for 2+ projects, improving load times by 25% and ensuring cross-browser compatibility.",
-      "Migrated legacy UI to modular React.js components, boosting scalability by 40% and reducing development time.",
-      "Developed RESTful APIs and Node.js middleware, streamlining data flow and API integrations by 30%.",
-      "Implemented WebSockets & NATS for real-time communication and system liveliness.",
-      "Achieved 95% test coverage using Jest, Enzyme, and TDD, reducing bugs by 20%.",
-      "Enhanced UI/UX feasibility, improving user satisfaction by 20%.",
-    ]
-  },
-  {
-    title: "Project 2",
-    points: [
-      "Developed cross-platform features (React Native) for 3+ service domains, enhancing task visibility for 50+ field employees through real-time updates.",
-      "Built a Customer Management Module (SQLite CRUD) managing 1000+ records with conditional business logic.",
-      "Integrated Fortnox & Visma APIs for two-way sync with validation, resolving data consistency issues in collaboration with backend teams.",
-      "Integrated 20+ reusable UI components with Tailwind utilities, managing scalable state with Redux, and screen transitions via React Navigation, boosting development speed by 30%.",
-      "Followed Agile practices: Sprint, Stand-up calls, and code reviews for timely feature delivery.",
-    ]
-  }
-]
-
-    }
+        {
+          title: "Project 1",
+          points: [
+            "Designed responsive UI components for 2+ projects, improving load times by 25% and ensuring cross-browser compatibility.",
+            "Migrated legacy UI to modular React.js components, boosting scalability by 40% and reducing development time.",
+            "Developed RESTful APIs and Node.js middleware, streamlining data flow and API integrations by 30%.",
+            "Implemented WebSockets & NATS for real-time communication and system liveliness.",
+            "Achieved 95% test coverage using Jest, Enzyme, and TDD, reducing bugs by 20%.",
+            "Enhanced UI/UX feasibility, improving user satisfaction by 20%.",
+          ],
+        },
+        {
+          title: "Project 2",
+          points: [
+            "Developed cross-platform features (React Native) for 3+ service domains, enhancing task visibility for 50+ field employees through real-time updates.",
+            "Built a Customer Management Module (SQLite CRUD) managing 1000+ records with conditional business logic.",
+            "Integrated Fortnox & Visma APIs for two-way sync with validation, resolving data consistency issues in collaboration with backend teams.",
+            "Integrated 20+ reusable UI components with Tailwind utilities, managing scalable state with Redux, and screen transitions via React Navigation, boosting development speed by 30%.",
+            "Followed Agile practices: Sprint, Stand-up calls, and code reviews for timely feature delivery.",
+          ],
+        },
+      ],
+    },
+    {
+      icon: Code2,
+      title: "Software Developer Engineer - 1",
+      company: "Vigilhawk Labs Pvt Ltd",
+      period: "Sept-2025 - Feb-2026",
+      description: [
+        {
+          title: "UTCP - Unified Technology Compliance Platform",
+          points: [
+            "Built scalable React.js + TypeScript UI modules for MSSP Console and Help Center, supporting 100+ internal users with optimized performance and maintainable architecture.",
+            "Developed a reusable component library (inspired by enterprise design systems), reducing development effort by 35% and improving UI consistency.",
+            "Created real-time dashboards and analytics views to track 10+ operational metrics, enabling faster data-driven decisions.",
+            "Integrated RESTful APIs to display live operational data, improving workflow efficiency by 30%.",
+            "Engineered high-performance data tables with advanced filtering, sorting, pagination, and search, reducing manual analysis time by 25%.",
+            "Designed and implemented an end-to-end Incident & Request Management module, covering ticket lifecycle, assignment, prioritization, and SLA tracking.",
+            "Built dynamic, role-based forms with validations and automated state transitions to ensure process compliance and operational accuracy.",
+            "Optimized large dataset handling and UI rendering using memoization, lazy loading, and efficient state management techniques.",
+          ],
+        },
+      ],
+    },
   ];
 
   return (

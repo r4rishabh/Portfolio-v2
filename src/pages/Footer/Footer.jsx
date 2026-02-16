@@ -6,7 +6,7 @@ const Footer = () => {
          <hr className="border-t border-gray-800 mb-4 width-full  max-w-7xl mx-auto" />
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4">
         <p className="text-white text-center md:text-left">
-          © 2025 RDS All rights reserved.
+          © 2026 RDS All rights reserved.
         </p>
         <div className="flex space-x-4">
           <a
